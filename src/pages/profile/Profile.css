@@ -1,0 +1,228 @@
+.profilePage {
+    display: flex;
+  }
+  
+  .left {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .profileImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profileImage img {
+    border-radius: 50%;
+  }
+  
+  .profileImage p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .form {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .personalInfo, .securityInfo {
+    margin-bottom: 30px;
+  }
+  
+  .sectionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .saveButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #7bbcb0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .saveButton:hover {
+    background-color: #5e9e91;
+  }
+  
+  .divider {
+    background-color: #f4f4f5;
+    height: 1px;
+    margin: 20px 0;
+  }
+  
+  @media (max-width: 991px) {
+    .profilePage {
+      flex-direction: column;
+    }
+  
+    .left, .form {
+      flex: none;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .inputField {
+      width: calc(100% - 20px);
+    }
+  
+    .saveButton {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  
+  /* Toggle switch styles */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.4s;
+    border: 2px solid #ccc;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #5e9e91;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #5e9e91;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  /* Accordion styles */
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .accordion-content.active {
+    display: block;
+  }
+  
+  /* Note and button styles */
+  .note {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    margin-left: 30px;
+    padding: 1;
+  }
+  
+  @media (max-width: 991px) {
+    .note {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
+  .notification-box {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .notification-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .notification-content {
+    font-size: 16px;
+  }
+  
+  .btn-note {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #7bbcb0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #5e9e91;
+  }
+
+  .return{
+    color: goldenrod;
+    cursor: pointer;
+    background-color:#f4f4f5;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  .linkReturn{
+    text-decoration: none;
+  }
